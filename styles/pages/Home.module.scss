@@ -1,3 +1,22 @@
 .main {
-
-}
+    background-color: #edeeef;
+    padding-top: 12vh;
+    padding-left: calc(24% - 9rem);
+    padding-right: calc(24% - 9rem);
+    min-height: 100vh;
+  
+    .welcome {
+      text-align: center;
+  
+      .icon {
+        font-size: 4em;
+        color: rgba(0, 0, 0, 0.45);
+        padding-top: 0.5em;
+      }
+  
+      .heading {
+        padding-top: 0.2em;
+        font-weight: 200;
+      }
+    }
+  }

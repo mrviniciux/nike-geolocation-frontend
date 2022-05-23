@@ -1,6 +1,6 @@
 import styles from './Navbar.module.scss';
 
-const Navbar = ({ inputPlaceholder }) => (
+const Navbar = ({  }) => (
   <nav id="SearchNavbar" className={styles['search-navbar']}>
     <div className={styles['search-navbar__logo-container']}>
       <a href="/">
@@ -13,5 +13,10 @@ const Navbar = ({ inputPlaceholder }) => (
     </div>
   </nav>
 );
+
+
+function a() {
+  return 1
+}
 
 export default Navbar;
