@@ -1,0 +1,24 @@
+.footer-container {
+    background-color: #1A1A1A;
+    min-height: 20vh;
+
+    .main-links-container, .caption-links-container, .about-nike, .social-payment {
+        padding: 40px;
+
+        .caption-link {
+            font-size: 12px;
+            margin-bottom: 0;
+        }
+    }
+
+    a, h2 {
+        color: white;
+    }
+
+    .main-links-container {
+        .main-links {
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+    }
+}
