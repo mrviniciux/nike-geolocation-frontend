@@ -3,31 +3,48 @@
   width: 100%;
   min-height: 10vh;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
-  padding-left: calc(24% - 9rem);
-  padding-right: calc(24% - 9rem);
+  padding-left: calc(15% - 9rem);
+  padding-right: calc(15% - 9rem);
 
-  @media screen and (max-width: 550px) {
-    padding-left: calc(24% - 5rem);
-    padding-right: calc(24% - 5rem);
-  }
-
-  .search-navbar__logo-container {
+  .logo-container {
      padding-right: 2em;
 
-     .search-navbar__logo {
-       max-width: 47px;
+     .navbar-logo {
+       max-width: 80px;
      }
   }
 
-  .search-navbar__input-container {
-    width: 100%;
+  ul.menu-item-container {
+    display: flex;
+    margin-bottom: 0;
 
-    .search-navbar__input {
+    li {
       display: block;
+      padding: 0px 20px 0px 0px;
+    }
+
+    li a {
+      color: black;
+      font-size: 16px;
+    }
+  }
+
+  .search-input {
+    display: flex;
+    align-items: center;
+
+    .icon-svg {
+      padding-left: 12px;
+      svg {
+        width: 1.8em;
+        height: 1.6em;
+      }
     }
   }
 }
+
 
