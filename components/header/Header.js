@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import Navbar from '../navbar/Navbar';
+import Pitchbar from './Pitchbar';
+import Subheader from './Subheader';
 
 const Header = () => (
   <>
@@ -11,8 +13,10 @@ const Header = () => (
       />
       <link rel="icon" href="/favicon.svg" />
     </Head>
-
+    
+    <Subheader />
     <Navbar />
+    <Pitchbar />
   </>
 );
 

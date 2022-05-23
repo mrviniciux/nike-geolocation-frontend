@@ -1,0 +1,23 @@
+.subheader-container {
+    padding-left: calc(15% - 9rem);
+    padding-right: calc(15% - 9rem);
+    background-color: #F7F7F7;
+    min-height: 50px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    .links {
+        display: flex;
+        margin-bottom: 0;
+        li {
+            display: block;
+            padding: 0px 20px 0px 0px;
+
+            a {
+                color: black;
+            }
+        }
+    }
+}

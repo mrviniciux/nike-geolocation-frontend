@@ -5,8 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
+
   padding-left: calc(15% - 9rem);
   padding-right: calc(15% - 9rem);
 
@@ -37,13 +36,6 @@
     display: flex;
     align-items: center;
 
-    .icon-svg {
-      padding-left: 12px;
-      svg {
-        width: 1.8em;
-        height: 1.6em;
-      }
-    }
   }
 }
 

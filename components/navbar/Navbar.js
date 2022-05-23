@@ -1,7 +1,6 @@
 import InputSearch from '../input/InputSearch';
 import styles from './Navbar.module.scss';
 import Icon, { CloseOutlined, MenuOutlined } from '@ant-design/icons';
-import IconSacola from '../../public/assets/icon_sacola.svg'
 
 const Navbar = () => (
   <nav id="SearchNavbar" className={styles['search-navbar']}>
@@ -26,7 +25,7 @@ const Navbar = () => (
 
       <div className={styles['search-input']}>
         <InputSearch type="outline" />
-        <Icon className={styles['icon-svg']} component={IconSacola} />
+        <img src="/assets/icon_sacola.svg" />
       </div>
 
   </nav>
