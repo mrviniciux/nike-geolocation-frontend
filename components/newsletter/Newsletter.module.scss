@@ -1,0 +1,15 @@
+.shops-container {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    .content {
+        max-width: 90%;
+
+        .title {
+            margin-top: 12px;
+            margin-bottom: 0;
+        }
+    }
+}

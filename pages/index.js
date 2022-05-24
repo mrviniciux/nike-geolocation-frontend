@@ -3,6 +3,8 @@ import { HomeOutlined } from '@ant-design/icons';
 import styles from '../styles/pages/Home.module.scss';
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
+import Shops from '../components/shops/Shops';
+import Newsletter from '../components/newsletter/Newsletter';
 
 const { Title } = Typography;
 
@@ -13,9 +15,9 @@ export default function Home() {
     <>
       <Header />
       <main className={styles.main}>
-        <section id="nice-presentation" className={styles.welcome}>
-          teste sbfasdfs
-        </section>
+        <Shops />
+
+        <Newsletter />
       </main>
       <Footer />
     </>

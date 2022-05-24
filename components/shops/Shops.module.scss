@@ -1,0 +1,13 @@
+.shops-container {
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    justify-content: center;
+
+    .search {
+        width: 50vw;
+    }
+}
