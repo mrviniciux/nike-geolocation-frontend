@@ -13,7 +13,7 @@ const Header = () => (
       />
       <link rel="icon" href="/favicon.svg" />
     </Head>
-    
+
     <Subheader />
     <Navbar />
     <Pitchbar />

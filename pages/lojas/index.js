@@ -25,12 +25,12 @@ const Lojas = () => {
         <Shops />
 
         <ShopListResult list={shops} />
-        
+
         <Newsletter />
       </main>
       <Footer />
     </>
   );
-}
+};
 
- export default Lojas;
+export default Lojas;
