@@ -3,9 +3,14 @@
     "airbnb-base/legacy",
     "prettier",
     "plugin:prettier/recommended",
-    "plugin:no-unsanitized/DOM"
+    "plugin:no-unsanitized/DOM",
+    "plugin:react/recommended"
   ],
   "plugins": [
+    "react",
+    "react-hooks",
+    "eslint-plugin-import-helpers",
+    "import",
     "prettier",
     "scanjs-rules",
     "no-unsanitized"
@@ -27,6 +32,11 @@
     "prefer-object-spread": "off",
     "func-names": "off",
     "prettier/prettier": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/react-in-jsx-scope": 0,
+    "react/display-name": 0,
+    "react/prop-types": "off",
     "scanjs-rules/accidental_assignment": 1,
     "scanjs-rules/assign_to_hostname": 1,
     "scanjs-rules/assign_to_onmessage": 1,
