@@ -1,7 +1,7 @@
 import axios from 'axios';
 import Flash from '../components/Flash';
 
-const API_URL = process.env.apiUrl;
+const API_URL = 'https://api.gruposbf.com.br/geolocation-api';
 
 export default class AxiosRequest {
   constructor(

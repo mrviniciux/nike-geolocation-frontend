@@ -7,7 +7,8 @@ const Shops = () => {
    <div className={styles['shops-container']}>
        <h1>Lojas</h1>
        <div className={styles['search']}>
-            <InputSearch type="filled" rightButton={true}  />
+            <InputSearch className={styles['input']} type="filled" rightButton={true}  />
+            <br/>
        </div>
    </div>
   );

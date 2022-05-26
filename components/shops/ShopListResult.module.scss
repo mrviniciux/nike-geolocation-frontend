@@ -1,0 +1,48 @@
+.shop-list-result-container {
+    background-color: white;
+    width: 100%;
+
+    .result {
+        display: flex;
+        .shops-container {
+            display: flex;
+            flex-direction: column;
+            background-color: #F7F7F7;
+            max-height: 40vh;
+            overflow: scroll;
+            padding: 12px;
+            .card {
+                padding: 12px;
+                flex: 50%;
+                .title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .view-location {
+                    padding-bottom: 12px;
+                }
+    
+                .card-details {
+                    background-color: white;
+                    border-radius: 12px;
+                    padding: 18px;
+                    color: #939393;
+                    font-size: 12px;
+
+                    .deliverable {
+                        font-weight: 700;
+                        color: green;
+                    }
+                }
+            }
+        }
+        
+
+        .map {
+            flex: 50%;
+        }
+    }
+    
+}
