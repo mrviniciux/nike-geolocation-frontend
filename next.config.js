@@ -1,5 +1,3 @@
-'use strict';
-
 const withAntdLess = require('next-plugin-antd-less');
 
 module.exports = withAntdLess({
@@ -18,6 +16,6 @@ module.exports = withAntdLess({
 
   // ONLY for Next.js 10, if you use Next.js 11, delete this block
   future: {
-    webpack5: true,
-  },
+    webpack5: true
+  }
 });

@@ -3,7 +3,7 @@ import styles from './Shops.module.scss';
 
 const Shops = () => {
   return (
-    <div className={styles['shops-container']}>
+    <div className={styles['search-shop-container']}>
       <h1>Lojas</h1>
       <div className={styles.search}>
         <InputSearch

@@ -4,10 +4,16 @@ export const PinIcon = () => (
   <img width="14px" src="/assets/icon_pin_link.svg" />
 );
 
+export const ArrowDownIcon = () => (
+  <img width="14px" src="/assets/icon_seta_baixo.svg" />
+);
+
 const ListItems = ({ list = [] }) => {
   return (
     <>
-      <span>Menor distancia \/</span>
+      <span>
+        Menor distancia <ArrowDownIcon />
+      </span>
       {list.map(shop => (
         <div className={styles.card} key={shop.number}>
           <div className={styles.title}>
