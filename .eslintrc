@@ -20,6 +20,7 @@
   },
   "env": {
     "browser": true,
+    "jest": true,
     "jquery": false,
     "es6": true
   },
@@ -62,5 +63,13 @@
     "scanjs-rules/property_mgmt": 1,
     "no-unsanitized/method": "error",
     "no-unsanitized/property": "error"
-  }
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/*.spec.js",
+        "**/*.spec.jsx"
+      ]
+    }
+  ]
 }

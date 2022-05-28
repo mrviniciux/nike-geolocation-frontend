@@ -1,11 +1,11 @@
-import styles from '../../styles/pages/Home.module.scss';
-import Header from '../../components/header/Header';
-import Footer from '../../components/footer/Footer';
-import Shops from '../../components/shops/Shops';
-import Newsletter from '../../components/newsletter/Newsletter';
-import { listShops } from '../../requests/ShopsRequest';
+import styles from '../../src/styles/pages/Home.module.scss';
+import Header from '../../src/components/header/Header';
+import Footer from '../../src/components/footer/Footer';
+import Shops from '../../src/components/shops/Shops';
+import Newsletter from '../../src/components/newsletter/Newsletter';
+import { listShops } from '../../src/requests/ShopsRequest';
 import { useState, useEffect } from 'react';
-import ShopListResult from '../../components/shops/ShopListResult';
+import ShopListResult from '../../src/components/shops/ShopListResult';
 
 const Lojas = () => {
   const [shops, setShops] = useState([]);
@@ -22,7 +22,7 @@ const Lojas = () => {
     <>
       <Header />
       <main className={styles.main}>
-        <Shops />
+        <Shops list={shops} />
 
         <ShopListResult list={shops} />
 
