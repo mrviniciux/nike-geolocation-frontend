@@ -3,12 +3,12 @@
  */
 
 import React from 'react';
-import DynamicMapNike from '../../components/map/DynamicMapNike';
+import Header from '../../src/components/header/Header';
 import { render } from '@testing-library/react';
 
-describe('DynamicMapNike rendering tests/snapshot', () => {
+describe('Header rendering tests/snapshot', () => {
   it('should match snapshot', () => {
-    const result = render(<DynamicMapNike />);
+    const result = render(<Header />);
 
     expect(result).toMatchSnapshot();
   });

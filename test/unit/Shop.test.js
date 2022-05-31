@@ -3,12 +3,12 @@
  */
 
 import React from 'react';
-import Subheader from '../../components/header/Subheader';
+import Shop from '../../src/components/shops/Shops';
 import { render } from '@testing-library/react';
 
-describe('Subheader rendering tests/snapshot', () => {
+describe('Shop rendering tests/snapshot', () => {
   it('should match snapshot', () => {
-    const result = render(<Subheader />);
+    const result = render(<Shop />);
 
     expect(result).toMatchSnapshot();
   });

@@ -2,14 +2,13 @@
  * @jest-environment jsdom
  */
 
-import '../matchMedia.mock.js';
 import React from 'react';
-import Footer from '../../components/footer/Footer';
+import Subheader from '../../src/components/header/Subheader';
 import { render } from '@testing-library/react';
 
-describe('Footer rendering tests/snapshot', () => {
+describe('Subheader rendering tests/snapshot', () => {
   it('should match snapshot', () => {
-    const result = render(<Footer />);
+    const result = render(<Subheader />);
 
     expect(result).toMatchSnapshot();
   });

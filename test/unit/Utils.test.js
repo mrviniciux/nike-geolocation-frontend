@@ -3,7 +3,7 @@
  */
 
 import '../matchMedia.mock.js';
-import { sortClosestShopsFrom } from '../../helpers/utils';
+import { sortClosestShopsFrom } from '../../src/helpers/utils';
 
 const storeList = [
   {

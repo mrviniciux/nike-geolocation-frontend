@@ -1,4 +1,4 @@
-import Flash from '../../components/Flash';
+import Flash from '../../src/components/Flash';
 
 it('should return a object', () => {
   const swalReturn = Flash.create('success', ['test']);

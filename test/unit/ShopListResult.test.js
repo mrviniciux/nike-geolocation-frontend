@@ -3,12 +3,12 @@
  */
 
 import React from 'react';
-import Shop from '../../components/shops/Shops';
+import ShopListResult from '../../src/components/shops/ShopListResult';
 import { render } from '@testing-library/react';
 
-describe('Shop rendering tests/snapshot', () => {
+describe('ShopListResult rendering tests/snapshot', () => {
   it('should match snapshot', () => {
-    const result = render(<Shop />);
+    const result = render(<ShopListResult />);
 
     expect(result).toMatchSnapshot();
   });

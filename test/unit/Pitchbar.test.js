@@ -3,12 +3,12 @@
  */
 
 import React from 'react';
-import ShopListResult from '../../components/shops/ShopListResult';
+import Pitchbar from '../../src/components/header/Pitchbar';
 import { render } from '@testing-library/react';
 
-describe('ShopListResult rendering tests/snapshot', () => {
+describe('Pitchbar rendering tests/snapshot', () => {
   it('should match snapshot', () => {
-    const result = render(<ShopListResult />);
+    const result = render(<Pitchbar />);
 
     expect(result).toMatchSnapshot();
   });

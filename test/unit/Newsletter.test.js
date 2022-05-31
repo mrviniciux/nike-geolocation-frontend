@@ -3,12 +3,12 @@
  */
 
 import React from 'react';
-import InputSearch from '../../components/input/InputSearch';
+import Newsletter from '../../src/components/newsletter/Newsletter';
 import { render } from '@testing-library/react';
 
-describe('InputSearch rendering tests/snapshot', () => {
+describe('Newsletter rendering tests/snapshot', () => {
   it('should match snapshot', () => {
-    const result = render(<InputSearch />);
+    const result = render(<Newsletter />);
 
     expect(result).toMatchSnapshot();
   });

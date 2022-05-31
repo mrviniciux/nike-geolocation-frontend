@@ -3,12 +3,12 @@
  */
 
 import React from 'react';
-import Navbar from '../../components/navbar/Navbar';
+import DynamicMapNike from '../../src/components/map/DynamicMapNike';
 import { render } from '@testing-library/react';
 
-describe('Navbar rendering tests/snapshot', () => {
+describe('DynamicMapNike rendering tests/snapshot', () => {
   it('should match snapshot', () => {
-    const result = render(<Navbar />);
+    const result = render(<DynamicMapNike />);
 
     expect(result).toMatchSnapshot();
   });

@@ -3,12 +3,12 @@
  */
 
 import React from 'react';
-import Header from '../../components/header/Header';
+import Navbar from '../../src/components/navbar/Navbar';
 import { render } from '@testing-library/react';
 
-describe('Header rendering tests/snapshot', () => {
+describe('Navbar rendering tests/snapshot', () => {
   it('should match snapshot', () => {
-    const result = render(<Header />);
+    const result = render(<Navbar />);
 
     expect(result).toMatchSnapshot();
   });
