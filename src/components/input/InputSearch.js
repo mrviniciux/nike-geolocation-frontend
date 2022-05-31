@@ -30,21 +30,21 @@ const InputSearch = ({ type, rightButton, width, helper, clickButton }) => {
   return (
     <>
       <div className={styles['search-input-container']}>
-          <Input
-            size="large"
-            width={width}
-            value={search}
-            onKeyDown={handleKeydown}
-            onChange={e => setSearch(maskLatLong(e.target.value))}
-            placeholder="Buscar"
-            className={styles[`search-input-${type}`]}
-            prefix={<SearchOutlined />}
-          />
-          {rightButton && (
-            <Button onClick={event => clickButton(event, search)} type="primary">
-              Buscar
-            </Button>
-          )}
+        <Input
+          size="large"
+          width={width}
+          value={search}
+          onKeyDown={handleKeydown}
+          onChange={e => setSearch(maskLatLong(e.target.value))}
+          placeholder="Buscar"
+          className={styles[`search-input-${type}`]}
+          prefix={<SearchOutlined />}
+        />
+        {rightButton && (
+          <Button onClick={event => clickButton(event, search)} type="primary">
+            Buscar
+          </Button>
+        )}
       </div>
       {helper && <span>{helper}</span>}
     </>

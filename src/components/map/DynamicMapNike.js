@@ -1,7 +1,11 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
+import { useShops } from '../../context/Shops.context';
+import { useMapLocation } from '../../context/MapLocation.context';
 
 function DynamicMapNike() {
+  const { shops } = useShops();
+  const { mapLocation } = useMapLocation();
   const Map = React.useMemo(
     () =>
       dynamic(
@@ -11,11 +15,9 @@ function DynamicMapNike() {
           ssr: false // This line is important. It's what prevents server-side render
         }
       ),
-    [
-      /* list variables which should trigger a re-render here */
-    ]
+    [shops, mapLocation]
   );
-  return <Map />;
+  return <Map markers={shops} />;
 }
 
 export default DynamicMapNike;

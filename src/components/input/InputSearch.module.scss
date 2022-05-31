@@ -3,7 +3,12 @@
     flex-direction: row;
     justify-content: center;
 
+    .search-input-filled {
+        margin-right: 12px;
+    }
+
     .search-input-outline {
+        margin-right: 12px;
         background-color: #F7F7F7;
         border-color: white;
         padding: 7px;

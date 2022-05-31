@@ -10,7 +10,7 @@ const Shops = () => {
   const { shops, setShops } = useShops();
   const filterShops = (event, search) => {
     const basePos = extractLatitudeLongitude(search);
-    const sortedShops = sortClosestShopsFrom(basePos, shops);
+    const sortedShops = sortClosestShopsFrom(basePos, shops).slice(0, 3);
 
     setShops(sortedShops);
   };

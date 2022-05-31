@@ -8,7 +8,7 @@ export default function ShopsProvider({ children }) {
 
   const getShops = async () => {
     const shopList = await listShops();
-    setShops(shopList);
+    setShops(shopList.slice(0, 3));
   };
   useEffect(() => getShops(), []);
 

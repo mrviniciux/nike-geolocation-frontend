@@ -1,4 +1,5 @@
 import styles from './ShopListResult.module.scss';
+import { useMapLocation } from '../../context/MapLocation.context';
 
 export const PinIcon = () => (
   <img width="14px" src="/assets/icon_pin_link.svg" />
@@ -9,6 +10,11 @@ export const ArrowDownIcon = () => (
 );
 
 const ListItems = ({ list = [] }) => {
+  const { setMapLocation } = useMapLocation();
+
+  const handleClick = shop => {
+    setMapLocation([shop.latitude, shop.longitude]);
+  };
   return (
     <>
       <span>
@@ -22,7 +28,7 @@ const ListItems = ({ list = [] }) => {
           </div>
 
           <div className={styles['view-location']}>
-            <a>
+            <a onClick={() => handleClick(shop)}>
               <PinIcon /> Ver localização
             </a>
           </div>
