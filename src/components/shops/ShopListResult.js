@@ -20,7 +20,7 @@ const ShopListResult = () => {
             </div>
 
             <div className={styles.map}>
-              <DynamicMapNike markers={shops} />
+              <DynamicMapNike cssAttr="desktop" markers={shops} />
             </div>
           </div>
         </div>

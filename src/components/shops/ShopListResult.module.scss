@@ -28,6 +28,18 @@
 
                     .view-location {
                         padding-bottom: 12px;
+
+                        .desktop {
+                            @media (max-width: 728px) {
+                                display: none;
+                            }
+                        }
+
+                        .mobile {
+                            @media (min-width: 728px) {
+                                display: none;
+                            }
+                        }
                     }
 
                     .card-details {

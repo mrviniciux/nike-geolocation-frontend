@@ -1,5 +1,9 @@
-.map-section {
+.map-section-desktop {
   @media screen and (max-width: 728px) {
     display: none;
   }
+}
+
+.map-section-mobile {
+  padding-top: 5vh;
 }

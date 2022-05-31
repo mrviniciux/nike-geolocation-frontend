@@ -27,7 +27,6 @@ const Shops = () => {
       <div className={styles.search}>
         <InputSearch
           className={styles.input}
-          helper={`Formato deve estar em: 99.999, 99.999`}
           type="filled"
           clickButton={filterShops}
           rightButton={true}

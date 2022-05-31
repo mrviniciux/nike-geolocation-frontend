@@ -11,11 +11,11 @@ const iconPinMap = new Icon({
   iconSize: [32, 32]
 });
 
-const Map = ({ markers }) => {
+const Map = ({ markers, cssAttr }) => {
   const { mapLocation } = useMapLocation();
 
   return (
-    <section className={styles['map-section']}>
+    <section className={styles[`map-section-${cssAttr}`]}>
       <Skeleton loading={markers.length === 0}>
         <MapContainer
           center={mapLocation}
