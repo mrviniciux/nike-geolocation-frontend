@@ -7,6 +7,7 @@ const Navbar = () => (
     <div className={styles['logo-container']}>
       <a href="/">
         <img
+          data-testid="logo-img"
           className={styles['navbar-logo']}
           src="/assets/logo_nike.svg"
           alt="Nike logo"
@@ -14,35 +15,35 @@ const Navbar = () => (
       </a>
     </div>
 
-    <ul className={styles['menu-item-container']}>
-      <li>
+    <ul data-testid="main-menu" className={styles['menu-item-container']}>
+      <li data-testid="menu-item">
         <a href="#">Lançamento</a>
       </li>
-      <li>
+      <li data-testid="menu-item">
         <a href="#">Masculino</a>
       </li>
-      <li>
+      <li data-testid="menu-item">
         <a href="#">Feminino</a>
       </li>
-      <li>
+      <li data-testid="menu-item">
         <a href="#">Infantil</a>
       </li>
-      <li>
+      <li data-testid="menu-item">
         <a href="#">Ofertas</a>
       </li>
-      <li>
+      <li data-testid="menu-item">
         <a href="#">SNKRS</a>
       </li>
     </ul>
 
     <div className={styles['search-input']}>
-      <InputSearch type="outline" />
-      <img src="/assets/icon_sacola.svg" />
+      <InputSearch data-testid="input-search" type="outline" />
+      <img data-testid="bag-icon" src="/assets/icon_sacola.svg" />
     </div>
 
     <div className={styles['menu-icon']}>
-      <img src="/assets/icon_sacola.svg" />
-      <MenuOutlined />
+      <img data-testid="bag-icon" src="/assets/icon_sacola.svg" />
+      <MenuOutlined data-testid="menu-icon" />
     </div>
   </nav>
 );

@@ -5,6 +5,191 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
+      <footer>
+        <div
+          class="ant-row"
+          role="row"
+        >
+          <div
+            class="ant-col ant-col-6"
+            role="cell"
+          >
+            <p>
+              <a
+                href="#"
+              >
+                Encontre uma loja da nike
+              </a>
+            </p>
+            <p>
+              <a
+                href="#"
+              >
+                Cadastre-se para receber novidades
+              </a>
+            </p>
+            <p>
+              <a
+                href="#"
+              >
+                Mapa do site
+              </a>
+            </p>
+          </div>
+          <div
+            class="ant-col ant-col-6"
+            role="cell"
+          >
+            <h2>
+              Ajuda
+            </h2>
+            <p>
+              <a
+                href="#"
+              >
+                Dúvidas Gerais
+              </a>
+            </p>
+            <p>
+              <a
+                href="#"
+              >
+                Encontre seu Tamanho
+              </a>
+            </p>
+            <p>
+              <a
+                href="#"
+              >
+                Entregas
+              </a>
+            </p>
+            <p>
+              <a
+                href="#"
+              >
+                Pedidos
+              </a>
+            </p>
+            <p>
+              <a
+                href="#"
+              >
+                Trocas e Devoluções
+              </a>
+            </p>
+            <p>
+              <a
+                href="#"
+              >
+                Editar consentimento
+              </a>
+            </p>
+            <p>
+              <a
+                href="#"
+              >
+                Preferências de Cookie
+              </a>
+            </p>
+            <p>
+              <a
+                href="#"
+              >
+                Pagamentos
+              </a>
+            </p>
+            <p>
+              <a
+                href="#"
+              >
+                Produtos
+              </a>
+            </p>
+            <p>
+              <a
+                href="#"
+              >
+                Corporativo
+              </a>
+            </p>
+            <p>
+              <a
+                href="#"
+              >
+                Fale Conosco
+              </a>
+            </p>
+          </div>
+          <div
+            class="ant-col ant-col-6"
+            role="cell"
+          >
+            <h2>
+              Sobre a nike
+            </h2>
+            <p>
+              <a
+                href="#"
+              >
+                Feito para Jogar
+              </a>
+            </p>
+            <p>
+              <a
+                href="#"
+              >
+                Sustentabilidade
+              </a>
+            </p>
+          </div>
+          <div
+            class="ant-col ant-col-6"
+            role="cell"
+          >
+            <h2>
+              Redes sociais
+            </h2>
+            <img
+              src="/assets/logo_redes_sociais_facebook.svg"
+            />
+            <img
+              src="/assets/logo_redes_sociais_instagram.svg"
+            />
+            <img
+              src="/assets/logo_redes_sociais_youtube.svg"
+            />
+            <h2>
+              Formas de pagamento
+            </h2>
+            <img
+              src="/assets/pgto_Mastercard.svg"
+            />
+            <img
+              src="/assets/pgto_Visa.svg"
+            />
+            <img
+              src="/assets/pgto_Amex.svg"
+            />
+            <img
+              src="/assets/pgto_Elo.svg"
+            />
+            <img
+              src="/assets/pgto_Hipercard.svg"
+            />
+            <img
+              src="/assets/pgto_Discover.svg"
+            />
+            <img
+              src="/assets/pgto_Boleto.svg"
+            />
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>,
+  "container": <div>
+    <footer>
       <div
         class="ant-row"
         role="row"
@@ -184,188 +369,7 @@ Object {
           />
         </div>
       </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="ant-row"
-      role="row"
-    >
-      <div
-        class="ant-col ant-col-6"
-        role="cell"
-      >
-        <p>
-          <a
-            href="#"
-          >
-            Encontre uma loja da nike
-          </a>
-        </p>
-        <p>
-          <a
-            href="#"
-          >
-            Cadastre-se para receber novidades
-          </a>
-        </p>
-        <p>
-          <a
-            href="#"
-          >
-            Mapa do site
-          </a>
-        </p>
-      </div>
-      <div
-        class="ant-col ant-col-6"
-        role="cell"
-      >
-        <h2>
-          Ajuda
-        </h2>
-        <p>
-          <a
-            href="#"
-          >
-            Dúvidas Gerais
-          </a>
-        </p>
-        <p>
-          <a
-            href="#"
-          >
-            Encontre seu Tamanho
-          </a>
-        </p>
-        <p>
-          <a
-            href="#"
-          >
-            Entregas
-          </a>
-        </p>
-        <p>
-          <a
-            href="#"
-          >
-            Pedidos
-          </a>
-        </p>
-        <p>
-          <a
-            href="#"
-          >
-            Trocas e Devoluções
-          </a>
-        </p>
-        <p>
-          <a
-            href="#"
-          >
-            Editar consentimento
-          </a>
-        </p>
-        <p>
-          <a
-            href="#"
-          >
-            Preferências de Cookie
-          </a>
-        </p>
-        <p>
-          <a
-            href="#"
-          >
-            Pagamentos
-          </a>
-        </p>
-        <p>
-          <a
-            href="#"
-          >
-            Produtos
-          </a>
-        </p>
-        <p>
-          <a
-            href="#"
-          >
-            Corporativo
-          </a>
-        </p>
-        <p>
-          <a
-            href="#"
-          >
-            Fale Conosco
-          </a>
-        </p>
-      </div>
-      <div
-        class="ant-col ant-col-6"
-        role="cell"
-      >
-        <h2>
-          Sobre a nike
-        </h2>
-        <p>
-          <a
-            href="#"
-          >
-            Feito para Jogar
-          </a>
-        </p>
-        <p>
-          <a
-            href="#"
-          >
-            Sustentabilidade
-          </a>
-        </p>
-      </div>
-      <div
-        class="ant-col ant-col-6"
-        role="cell"
-      >
-        <h2>
-          Redes sociais
-        </h2>
-        <img
-          src="/assets/logo_redes_sociais_facebook.svg"
-        />
-        <img
-          src="/assets/logo_redes_sociais_instagram.svg"
-        />
-        <img
-          src="/assets/logo_redes_sociais_youtube.svg"
-        />
-        <h2>
-          Formas de pagamento
-        </h2>
-        <img
-          src="/assets/pgto_Mastercard.svg"
-        />
-        <img
-          src="/assets/pgto_Visa.svg"
-        />
-        <img
-          src="/assets/pgto_Amex.svg"
-        />
-        <img
-          src="/assets/pgto_Elo.svg"
-        />
-        <img
-          src="/assets/pgto_Hipercard.svg"
-        />
-        <img
-          src="/assets/pgto_Discover.svg"
-        />
-        <img
-          src="/assets/pgto_Boleto.svg"
-        />
-      </div>
-    </div>
+    </footer>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
