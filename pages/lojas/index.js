@@ -12,15 +12,15 @@ const Lojas = () => {
     <>
       <Header />
       <main className={styles.main}>
-        <ShopsProvider>
-          <Shops />
+        <MapLocationProvider>
+          <ShopsProvider>
+            <Shops />
 
-          <MapLocationProvider>
             <ShopListResult />
-          </MapLocationProvider>
 
-          <Newsletter />
-        </ShopsProvider>
+            <Newsletter />
+          </ShopsProvider>
+        </MapLocationProvider>
       </main>
       <Footer />
     </>

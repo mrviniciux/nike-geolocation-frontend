@@ -46,7 +46,7 @@ const InputSearch = ({ type, rightButton, width, helper, clickButton }) => {
           </Button>
         )}
       </div>
-      {helper && <span>{helper}</span>}
+      {helper && <span className="caption-text">{helper}</span>}
     </>
   );
 };

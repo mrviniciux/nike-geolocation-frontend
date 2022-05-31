@@ -1,16 +1,9 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
-import { listShops } from '../requests/ShopsRequest';
+import React, { createContext, useContext, useState } from 'react';
 
 const ShopsContext = createContext();
 
 export default function ShopsProvider({ children }) {
   const [shops, setShops] = useState([]);
-
-  const getShops = async () => {
-    const shopList = await listShops();
-    setShops(shopList.slice(0, 3));
-  };
-  useEffect(() => getShops(), []);
 
   return (
     <ShopsContext.Provider

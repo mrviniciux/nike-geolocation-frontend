@@ -5,13 +5,19 @@ import {
   extractLatitudeLongitude,
   sortClosestShopsFrom
 } from '../../helpers/utils';
+import { listShops } from '../../requests/ShopsRequest';
+import { useMapLocation } from '../../context/MapLocation.context';
 
 const Shops = () => {
-  const { shops, setShops } = useShops();
-  const filterShops = (event, search) => {
-    const basePos = extractLatitudeLongitude(search);
-    const sortedShops = sortClosestShopsFrom(basePos, shops).slice(0, 3);
+  const { setMapLocation } = useMapLocation();
+  const { setShops } = useShops();
 
+  const filterShops = async (event, search) => {
+    const shopList = await listShops();
+    const basePos = extractLatitudeLongitude(search);
+    const sortedShops = sortClosestShopsFrom(basePos, shopList).slice(0, 3);
+
+    setMapLocation([sortedShops[0].latitude, sortedShops[0].longitude]);
     setShops(sortedShops);
   };
 

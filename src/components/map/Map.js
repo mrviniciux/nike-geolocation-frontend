@@ -17,7 +17,7 @@ const Map = ({ markers }) => {
     <Skeleton loading={markers.length === 0}>
       <MapContainer
         center={mapLocation}
-        zoom={7}
+        zoom={10}
         scrollWheelZoom={false}
         style={{ height: 400, width: '100%' }}
       >
@@ -29,6 +29,7 @@ const Map = ({ markers }) => {
           markers.map(marker => (
             <Marker
               position={[marker.latitude, marker.longitude]}
+              key={marker.number}
               icon={iconPinMap}
             >
               <Popup>
