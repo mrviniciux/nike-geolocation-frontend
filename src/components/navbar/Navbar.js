@@ -1,5 +1,6 @@
 import InputSearch from '../input/InputSearch';
 import styles from './Navbar.module.scss';
+import { MenuOutlined } from '@ant-design/icons';
 
 const Navbar = () => (
   <nav id="SearchNavbar" className={styles['search-navbar']}>
@@ -37,6 +38,11 @@ const Navbar = () => (
     <div className={styles['search-input']}>
       <InputSearch type="outline" />
       <img src="/assets/icon_sacola.svg" />
+    </div>
+
+    <div className={styles['menu-icon']}>
+      <img src="/assets/icon_sacola.svg" />
+      <MenuOutlined />
     </div>
   </nav>
 );

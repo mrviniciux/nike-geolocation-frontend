@@ -1,10 +1,15 @@
 .footer-container {
     background-color: #1A1A1A;
     min-height: 20vh;
+    justify-content: center;
 
     .main-links-container, .caption-links-container, .about-nike, .social-payment {
-        padding: 40px;
-
+        @media screen and (min-width: 500px) {
+            padding: 40px;
+            min-width: 260px;
+        }
+        padding: 20px;
+        min-width: 100%;
         .caption-link {
             font-size: 12px;
             margin-bottom: 0;
