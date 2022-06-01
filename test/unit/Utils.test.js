@@ -3,7 +3,10 @@
  */
 
 import '../matchMedia.mock.js';
-import { sortClosestShopsFrom } from '../../src/helpers/utils';
+import {
+  extractLatitudeLongitude,
+  sortClosestShopsFrom
+} from '../../src/helpers/utils';
 
 const storeList = [
   {
@@ -46,5 +49,13 @@ describe('Assert all utilitary functions', () => {
     const sortedList = sortClosestShopsFrom(basepos, storeList);
 
     expect(sortedList[0].name).toBe('Shop 2');
+  });
+
+  it('should extract latitude and longitude from string', () => {
+    const string = '-37.81411,144.96328';
+    const { latitude, longitude } = extractLatitudeLongitude(string);
+
+    expect(latitude).toBe(-37.81411);
+    expect(longitude).toBe(144.96328);
   });
 });

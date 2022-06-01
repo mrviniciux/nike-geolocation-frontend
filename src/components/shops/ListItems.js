@@ -30,12 +30,12 @@ const ListItems = ({ list = [] }) => {
   };
 
   return (
-    <>
+    <section data-testid="shops-list">
       <span>
         Menor distancia <ArrowDownIcon />
       </span>
       {list.map(shop => (
-        <div className={styles.card} key={shop.number}>
+        <div className={styles.card} key={shop.number} data-testid="shops-list--item">
           <div className={styles.title}>
             <h2>{shop.name}</h2>
             <span>1,0km</span>
@@ -68,7 +68,7 @@ const ListItems = ({ list = [] }) => {
       >
         <DynamicMapNike cssAttr="mobile" markers={list} />
       </Modal>
-    </>
+    </section>
   );
 };
 

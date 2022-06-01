@@ -37,11 +37,12 @@ const InputSearch = ({ type, rightButton, width, helper, clickButton }) => {
           onKeyDown={handleKeydown}
           onChange={e => setSearch(maskLatLong(e.target.value))}
           placeholder="Buscar"
+          data-testid="input-search"
           className={styles[`search-input-${type}`]}
           prefix={<SearchOutlined />}
         />
         {rightButton && (
-          <Button onClick={event => clickButton(event, search)} type="primary">
+          <Button data-testid="button-search" onClick={event => clickButton(event, search)} type="primary">
             Buscar
           </Button>
         )}

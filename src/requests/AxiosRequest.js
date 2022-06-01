@@ -29,7 +29,7 @@ export default class AxiosRequest {
       let route = '';
       let config = {};
 
-      this.actions.forEach((key) => {
+      this.actions.forEach(key => {
         if (key[action] && key[action].method) requestAction = key[action];
       });
 
@@ -66,45 +66,45 @@ export default class AxiosRequest {
         url: urlPath,
         params: this._objUrlFilters,
         data,
-        config,
+        config
       };
 
       return axios(axiosConfig)
         .then(
-          (res) => {
+          res => {
             if (res.data.success)
               Flash.create('success', [res.data.success.message]);
 
             return !this._returnName ? res.data : res.data[this._returnName];
           },
-          (e) => {
+          e => {
             switch (e.response.status) {
               case 500:
                 return Flash.create('error', [
-                  `${this._returnName}: Request failed with status 500. Contate o administrador do sistema`,
+                  `${this._returnName}: Request failed with status 500. Contate o administrador do sistema`
                 ]);
               case 404:
                 return Flash.create('error', [
-                  `${this._returnName}: Request failed with status 404. The page doesnt exist. Contate o administrador do sistema`,
+                  `${this._returnName}: Request failed with status 404. The page doesnt exist. Contate o administrador do sistema`
                 ]);
               case 502:
                 return Flash.create('error', [
-                  `${this._returnName}: Request failed with status 502. Verifique sua conexão com a rede`,
+                  `${this._returnName}: Request failed with status 502. Verifique sua conexão com a rede`
                 ]);
               case 503:
                 return Flash.create('error', [
-                  `${this._returnName}: Request failed with status 503. Contate o administrador do sistema`,
+                  `${this._returnName}: Request failed with status 503. Contate o administrador do sistema`
                 ]);
               case 504:
                 return Flash.create('error', [
-                  `${this._returnName}: Request failed with status 504 timeout. Contate o administrador do sistema`,
+                  `${this._returnName}: Request failed with status 504 timeout. Contate o administrador do sistema`
                 ]);
               default:
                 return Flash.create('error', [e.response.data.error.message]);
             }
           }
         )
-        .catch((error) => Flash.create('error', ['Api error: ', error]));
+        .catch(error => Flash.create('error', ['Api error: ', error]));
     } catch (e) {
       Flash.create('error', [e.message]);
       throw new Error(e);
@@ -118,12 +118,12 @@ export default class AxiosRequest {
   get route() {
     // Search all the params in the URL. They start with dotdot ":"
     const arrUrlParams = this._strRoute.match(/:\w+/gm)
-      ? this._strRoute.match(/:\w+/gm).map((item) => item.replace(':', ''))
+      ? this._strRoute.match(/:\w+/gm).map(item => item.replace(':', ''))
       : [];
     const params = this._objData;
 
     let urlWithReplacedParams = '';
-    arrUrlParams.forEach((itemParam) => {
+    arrUrlParams.forEach(itemParam => {
       if (params && params[itemParam]) {
         urlWithReplacedParams = this._strRoute.replace(
           `:${itemParam}`,
@@ -139,7 +139,7 @@ export default class AxiosRequest {
     let urlWithParams = '';
 
     if (arrUrlNotSpecifiedParams && arrUrlNotSpecifiedParams.length > 0) {
-      arrUrlNotSpecifiedParams.forEach((item) => {
+      arrUrlNotSpecifiedParams.forEach(item => {
         urlWithParams = (urlWithReplacedParams || this._strRoute).replace(
           item,
           ''
