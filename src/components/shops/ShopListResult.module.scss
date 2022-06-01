@@ -9,7 +9,6 @@
         .shops {
             display: flex;
             flex: 50%;
-            padding-right: 12px;
             flex-direction: column;
             .card-container {
                 border-radius: 12px;
@@ -30,13 +29,13 @@
                         padding-bottom: 12px;
 
                         .desktop {
-                            @media (max-width: 727px) {
+                            @media (max-width: 703px) {
                                 display: none;
                             }
                         }
 
                         .mobile {
-                            @media (min-width: 728px) {
+                            @media (min-width: 704px) {
                                 display: none;
                             }
                         }
@@ -62,7 +61,7 @@
 
         .map {
             flex: 50%;
-            padding-left: 12px;
+            padding-left: 24px;
         }
     }
     
