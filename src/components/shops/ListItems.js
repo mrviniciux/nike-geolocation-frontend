@@ -42,11 +42,11 @@ const ListItems = ({ list = [] }) => {
           </div>
 
           <div className={styles['view-location']}>
-            <a className={styles.desktop} onClick={() => handleClick(shop)}>
+            <a id="viewLocationDesktop" className={styles.desktop} onClick={() => handleClick(shop)}>
               <PinIcon /> Ver localização
             </a>
 
-            <a className={styles.mobile} onClick={() => showModalMap(shop)}>
+            <a id="viewLocationMobile" className={styles.mobile} onClick={() => showModalMap(shop)}>
               <PinIcon /> Ver localização
             </a>
           </div>
