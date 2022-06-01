@@ -18,7 +18,6 @@
     "@svgr/webpack": "^6.2.1",
     "antd": "^4.19.3",
     "axios": "^0.26.1",
-    "currency.js": "^2.0.4",
     "jest-next-dynamic": "^1.0.1",
     "leaflet": "^1.8.0",
     "next": "12.1.2",
