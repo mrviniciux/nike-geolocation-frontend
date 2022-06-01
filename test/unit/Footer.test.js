@@ -30,7 +30,7 @@ describe('Footer rendering tests', () => {
   it('must have all payment options as described', () => {
     const { getAllByTestId } = render(<Footer />);
 
-    expect(getAllByTestId('payment-option')).toHaveLength(6);
+    expect(getAllByTestId('payment-option')).toHaveLength(7);
   });
 
   it('must have all social media icons as described', () => {

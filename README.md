@@ -1,11 +1,14 @@
 # Geolocation Frontend
 
+![Geolocation nike homepage](https://i.imgur.com/m3oApMu.png "Geolocation nike homepage")
 
 ## Requirements
 
 * Node >= 16.14.2
 * NPM or Yarn
+* NVM (optional)
 
+`nvm` could be use to switch to right version of Node. Just type `nvm use` on project root.
 
 ## Production mode
 Build all the assets and validate the files
