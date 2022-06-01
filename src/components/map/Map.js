@@ -15,7 +15,10 @@ const Map = ({ markers, cssAttr }) => {
   const { mapLocation } = useMapLocation();
 
   return (
-    <section className={styles[`map-section-${cssAttr}`]}>
+    <section
+      data-testid="map-section"
+      className={styles[`map-section-${cssAttr}`]}
+    >
       <Skeleton loading={markers.length === 0}>
         <MapContainer
           center={mapLocation}

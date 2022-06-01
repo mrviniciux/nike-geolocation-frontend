@@ -5,14 +5,18 @@ const Newsletter = () => {
   return (
     <section className={styles['shops-container']}>
       <div className={styles.content}>
-        <img src="/assets/logo_nike.svg" />
-        <h2 className={styles.title}>RECEBA AS NOVIDADES DA NIKE</h2>
-        <p className={styles.caption}>
+        <img data-testid="logo-img" src="/assets/logo_nike.svg" />
+        <h2 data-testid="newsletter-title" className={styles.title}>
+          RECEBA AS NOVIDADES DA NIKE
+        </h2>
+        <p data-testid="newsletter-description" className={styles.caption}>
           Cadastre-se e seja um dos primeiros a saber de todas as novidades e
           ofertas
         </p>
 
-        <Button type="primary">Cadastre-se</Button>
+        <Button data-testid="newsletter-button-cta" type="primary">
+          Cadastre-se
+        </Button>
       </div>
     </section>
   );

@@ -8,13 +8,12 @@ function DynamicMapNike({ cssAttr }) {
   const { mapLocation } = useMapLocation();
   const Map = React.useMemo(
     () =>
-      dynamic(
-        () => import('./Map.js'), // replace '@components/map' with your component's location
-        {
-          loading: () => <p>A map is loading</p>,
-          ssr: false // This line is important. It's what prevents server-side render
-        }
-      ),
+      dynamic(() => import('./Map.js'), {
+        loading: () => (
+          <span data-testid="map-loading-text">Carregando mapa... </span>
+        ),
+        ssr: false
+      }),
     [shops, mapLocation]
   );
   return <Map markers={shops} cssAttr={cssAttr} />;
