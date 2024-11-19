@@ -6,7 +6,7 @@ import Subheader from './Subheader';
 const Header = () => (
   <>
     <Head>
-      <title>Grupo SBF</title>
+      <title>Nike Geolocation</title>
       <meta
         name="description"
         content="Nike, Centauro, Fisia, NWB, Onefan, X3M, Fit Dance"
